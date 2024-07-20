@@ -131,9 +131,33 @@ Performance on trainset
 
 ![Screenshot 2024-07-20 175738](https://github.com/user-attachments/assets/97d0c7d2-9e3c-4e7f-b836-fdbf3fb14578)
 
+Prediction examples 
+
+Test example 1:
+Input features:
+{'Hour': 8.0, 'Temperature(°C)': 27.2, 'Humidity(%)': 69.0, 'Wind speed (m/s)': 1.8, 'Visibility (10m)': 1999.0, 'Dew point temperature(°C)': 21.0, 'Solar Radiation (MJ/m2)': 0.7, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 2.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2018.0, 'WeekDay': 5.0}
+Actual: 1728
+Predicted: 779.1
+
+Test example 2:
+Input features:
+{'Hour': 12.0, 'Temperature(°C)': 32.6, 'Humidity(%)': 51.0, 'Wind speed (m/s)': 2.1, 'Visibility (10m)': 800.0, 'Dew point temperature(°C)': 21.1, 'Solar Radiation (MJ/m2)': 3.21, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 2.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2018.0, 'WeekDay': 5.0}
+Actual: 822
+Predicted: 1057.86
+
+Synthesized example 1:
+Input features:
+{'Hour': 10.0, 'Temperature(°C)': 25.0, 'Humidity(%)': 40.0, 'Wind speed (m/s)': 2.0, 'Visibility (10m)': 2000.0, 'Dew point temperature(°C)': 15.0, 'Solar Radiation (MJ/m2)': 0.5, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 0.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2017.0, 'WeekDay': 1.0}
+Predicted: 857.84
+
+Synthesized example 2:
+Input features:
+{'Hour': 14.0, 'Temperature(°C)': 30.0, 'Humidity(%)': 50.0, 'Wind speed (m/s)': 3.5, 'Visibility (10m)': 1500.0, 'Dew point temperature(°C)': 20.0, 'Solar Radiation (MJ/m2)': 0.1, 'Rainfall(mm)': 0.1, 'Snowfall (cm)': 0.1, 'Seasons': 3.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2017.0, 'WeekDay': 7.0}
+Predicted: 391.5
+
 Random forests are usually less prone to overfitting and do not require extensive hyperparameter tuning
 
-Note that random forest model could give slightly different results everytime its trained because of bootstrapping(training on random subsets of training data) but its only a slight difference.
+Note that random forest model could give slightly different results every time it's trained because of bootstrapping(training on random subsets of training data) but its only a slight difference.
 
 ## Production
 This model is only trained on 2017 and 2018 year data(year variable has only these two values in training data) so it cant make prediction for newer years.
