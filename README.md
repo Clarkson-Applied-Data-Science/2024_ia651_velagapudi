@@ -55,6 +55,7 @@ Categorical Features
 ### Exploratory Stats
 Average Rented Bike Count by Season and Holiday
 ![Screenshot 2024-07-20 161508](https://github.com/user-attachments/assets/7860d35b-73fa-47e3-aba0-5c11bbb79529)
+
 Average Rented Bike Count by Hour
 ![Screenshot 2024-07-20 161542](https://github.com/user-attachments/assets/31c45433-c039-44e7-8c0c-1a4564c6b0b6)
 
