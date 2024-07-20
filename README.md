@@ -99,16 +99,17 @@ Weekday is included as there is substantial difference in Mean Rented Bike Count
 Date and Month are not included to avoid turning it into a time series model as Random forest can't handle time series data well enough and to focus to building a simple more generalized model based on non datetime input features, Hour and weekday are included to capture very common obvious routines. 
 
 ## Feature engineering -
-Categorical variables Functioning day and Holiday are numerically encoded as they are binary categorical variables\\
-Season and Weekday are label encoded numerically for the following reasons\\
-1.One Hot encoding is not suitable for Random Forest Model as it increases tree complexity which could be more prone to making bad predictions\\
+Categorical variables Functioning day and Holiday are numerically encoded as they are binary categorical variables\
+Season and Weekday are label encoded numerically for the following reasons\
+1.One Hot encoding is not suitable for Random Forest Model as it increases tree complexity which could be more prone to making bad predictions\
 2.Tree models handle numerical label encoding as they can make very precise splits
 
 Data After Feature Engineering
 ![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
 
 ## Final Model
-A Random Forest model(n_estimators=100,bootstrap=True) is trained\\
+A Random Forest model(n_estimators=100,bootstrap=True) is trained\
 
 Results
+
 ![Screenshot 2024-07-20 162219](https://github.com/user-attachments/assets/0b339970-45f2-4f89-aae6-827999d989b6)
