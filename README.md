@@ -108,7 +108,7 @@ Data After Feature Engineering
 ![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
 
 ## Final Model
-A Random Forest model(n_estimators=100,bootstrap=True) is trained\
+A Random Forest model with parameters n_estimators=100,bootstrap=True is trained
 
 Results
 
