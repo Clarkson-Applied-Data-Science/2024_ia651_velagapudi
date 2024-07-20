@@ -4,7 +4,10 @@
 
 ## Overview
 
-The dataset contains hourly data on public bicycle rentals in Seoul, along with corresponding weather and holiday information. This dataset is essential for understanding and predicting bike rental demand, which can help in efficiently managing the availability of rental bikes throughout the city.
+The dataset contains count of public bicycles rented per hour in the Seoul Bike Sharing System, with corresponding weather data and holiday information
+
+This dataset is taken from uci machine learning repository
+https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand
 
 ## Dataset Details
 
