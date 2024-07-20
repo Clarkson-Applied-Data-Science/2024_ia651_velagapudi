@@ -46,3 +46,14 @@ Numerical Features
 Categorical Features
 ![1](https://github.com/user-attachments/assets/6f621111-8805-497e-947d-8605d06a3121)
 
+### Correlation Matrix
+![Screenshot 2024-07-20 161446](https://github.com/user-attachments/assets/9fbda2b0-d3c9-40c0-b762-00e579b47e42)
+
+### Exploratory Stats
+![Screenshot 2024-07-20 161508](https://github.com/user-attachments/assets/7860d35b-73fa-47e3-aba0-5c11bbb79529)
+![Screenshot 2024-07-20 161542](https://github.com/user-attachments/assets/31c45433-c039-44e7-8c0c-1a4564c6b0b6)
+
+
+
+
+
