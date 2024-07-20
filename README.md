@@ -85,7 +85,7 @@ Mean rented bike count by weekday
 
 ![Screenshot 2024-07-20 161702](https://github.com/user-attachments/assets/93fd6db3-3d6e-4e18-b4e4-d295e2d0c6ef)
 
-Feature selection -\
+### Feature selection -\
 All numerical features are selected as they are well correlated with the target variable(Rented Bike Count) as all absolute correlation values are 0.1 and greater
 
 All categorical columns(Functioning day,Holiday,Season) are also selected as they are significantly impacting(from EDA above there is significant variation in Rented Bike Count for different values of these categorical variables) Rented Bike Count.
@@ -97,6 +97,12 @@ Year is included as there is significant difference in Mean Rented Bike Count by
 Weekday is included as there is substantial difference in Mean Rented Bike Count by Weekday and it could be a required factor as weekly routines are common.
 
 Date and Month are not included to avoid turning it into a time series model as Random forest can't handle time series data well enough and to focus to building a simple more generalized model based on non datetime input features, Hour and weekday are included to capture very common obvious routines. 
+
+### Feature engineering -\
+Categorical variables Functioning day and Holiday are numerically encoded as they are binary categorical variables\
+Season and Weekday are label encoded numerically for the following reasons
+1.One Hot encoding is not suitable for Random Forest Model as it increases tree complexity which could be more prone to making bad predictions
+2.Tree models handle numerical label encoding as they can make very precise splits
 
 Data After Feature Engineering
 ![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
