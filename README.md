@@ -39,6 +39,9 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 This project aims to predict Rented Bike Count variable based on several input features
 
 ## Exploratory Data Analysis EDA
+Sample Data
+![Screenshot 2024-07-20 162126](https://github.com/user-attachments/assets/0c589275-a21e-4fb8-b211-70f111af66d7)
+
 ### Distribution of features
 Numerical Features
 ![0](https://github.com/user-attachments/assets/9322e140-ffa5-4712-b0a6-c08aabd54164)
@@ -50,10 +53,23 @@ Categorical Features
 ![Screenshot 2024-07-20 161446](https://github.com/user-attachments/assets/9fbda2b0-d3c9-40c0-b762-00e579b47e42)
 
 ### Exploratory Stats
+Average Rented Bike Count by Season and Holiday
 ![Screenshot 2024-07-20 161508](https://github.com/user-attachments/assets/7860d35b-73fa-47e3-aba0-5c11bbb79529)
+Average Rented Bike Count by Hour
 ![Screenshot 2024-07-20 161542](https://github.com/user-attachments/assets/31c45433-c039-44e7-8c0c-1a4564c6b0b6)
 
+![Screenshot 2024-07-20 161522](https://github.com/user-attachments/assets/cc111beb-d443-49d6-90b2-6901686ca07a)
+
+![Screenshot 2024-07-20 161530](https://github.com/user-attachments/assets/b7624748-659d-4cf0-81de-c1a1dca9204e)
 
 
+![Screenshot 2024-07-20 161641](https://github.com/user-attachments/assets/f7f81687-a741-4b6f-ae27-3133a450fa7f)
+![Screenshot 2024-07-20 161652](https://github.com/user-attachments/assets/308ab0dc-457b-4b9e-b9b2-60f67a0ec010)
 
+![Screenshot 2024-07-20 161702](https://github.com/user-attachments/assets/93fd6db3-3d6e-4e18-b4e4-d295e2d0c6ef)
 
+Data After Encoding Categorical Variables
+![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
+
+Results
+![Screenshot 2024-07-20 162219](https://github.com/user-attachments/assets/0b339970-45f2-4f89-aae6-827999d989b6)
