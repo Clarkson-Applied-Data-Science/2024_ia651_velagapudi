@@ -6,15 +6,11 @@
 
 The dataset contains hourly data on public bicycle rentals in Seoul, along with corresponding weather and holiday information. This dataset is essential for understanding and predicting bike rental demand, which can help in efficiently managing the availability of rental bikes throughout the city.
 
-## Problem Statement
-
-Rental bikes have become increasingly popular in urban areas, enhancing mobility and reducing waiting times for users. Ensuring that bikes are available when needed is crucial for maintaining a stable supply and meeting public demand. This dataset aims to address the challenge of predicting the number of bikes required at each hour to optimize rental bike availability.
-
 ## Dataset Details
 
 The dataset includes the following features:
 
-- **Rental Count**: The number of bikes rented per hour.
+- **Rentad Bike Count**: The number of bikes rented per hour.
 - **Weather Information**:
   - **Temperature**: Temperature in degrees Celsius.
   - **Humidity**: Relative humidity percentage.
@@ -25,10 +21,13 @@ The dataset includes the following features:
   - **Snowfall**: Snowfall amount in millimeters.
   - **Rainfall**: Rainfall amount in millimeters.
 - **Date Information**:
-  - Date and time of the bike rentals.
-- **Holiday Information**: Information on whether the date is a holiday.
+  - **Date**: year-month-day
+  - **Hour**: Hour of he day
+- **Holiday**: Information on whether the date is a holiday.(Holiday/No holiday)
+- **Functionining Day** - Information on whether the date is a Fucntioning Day.(Yes/No)
+- **Number of Instances**: [Specify the exact number of rows/instances in your dataset]
 
 ## Objectives
 
-The primary objective is to predict the number of bikes required at each hour to ensure a stable supply of rental bikes. This involves using the weather and holiday information to build predictive models that can accurately forecast bike rental demand.
+Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes. 
 
