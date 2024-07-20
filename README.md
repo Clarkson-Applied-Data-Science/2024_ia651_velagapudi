@@ -69,7 +69,7 @@ Average Rented Bike Count by Functioning Day
 
 ![Screenshot 2024-07-20 161522](https://github.com/user-attachments/assets/cc111beb-d443-49d6-90b2-6901686ca07a)
 
-As the average rented bike count is 0 for non functioning days The model will be adjusted to predict 0 everytime functioning day is 0
+As the average rented bike count is 0 for non functioning days, The model will be adjusted to predict 0 everytime functioning day is 0
 
 Average Rented Bike Count by Holiday
 
