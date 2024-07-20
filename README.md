@@ -85,8 +85,13 @@ Mean rented bike count by weekday
 
 Feature selection -\
 All numerical features are selected as they are well correlated with the target variable(Rented Bike Count) as all absolute correlation values are 0.1 and greater\
-All categorical columns(Functioning day,Holiday,Season) are also selected as they are significantly impacting(from EDA above there is significant variation in Rented Bike Count for different values of these categorical variables) Rented Bike Count
-Hour is signifcantly impacting Rented Bike Count (see Hour vs Rented Bike Count plot) and It has positive correlation of 0.42 with Rented Bike Count(see Correlation matrix) indicating increasing trend on average as hour of the day increases
+
+All categorical columns(Functioning day,Holiday,Season) are also selected as they are significantly impacting(from EDA above there is significant variation in Rented Bike Count for different values of these categorical variables) Rented Bike Count\
+
+Hour is signifcantly impacting Rented Bike Count (see Hour vs Rented Bike Count plot) and It has positive correlation of 0.42 with Rented Bike Count(see Correlation matrix) indicating increasing trend on average as hour of the day increases and Daily routines often vary by hour, making it an important factor to consider.\
+Year is included as there is significant difference in Mean Rented Bike Count by Year. Note that when a new year is introduced the model cant make good predictions; solution for that is suggested at the end\
+Weekday is included as there is substantial difference in Mean Rented Bike Count by Weekday and it could be a required factor as weekly routines are common\
+Date and Month are not included to avoid turning it into a time series model as Random forest can't handle time series data well enough and to focus to building a simple more generalized model based on non datetime input features, Hour and weekday are included to capture very common obvious routines. 
 
 Data After Feature Engineering
 ![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
