@@ -160,12 +160,20 @@ Random forests are usually less prone to overfitting and do not require extensiv
 
 Note that random forest model could give slightly different results every time it's trained because of bootstrapping(training on random subsets of training data) but its only a slight difference.
 
+##Limitations
+This Model is only able to explain 90% variance on test set.
+Random Forest models are not easily interpretable compared to single decision trees.
+This model can give far off predictions as seen in the test example 1 especially with outliers.
+This model is only trained on 2017 and 2018 year data; could give bad predictions for newer years.
+The model cannot forecast unanticipated events.
+
+
 ## Production
 This model is only trained on 2017 and 2018 year data(year variable has only these two values in training data) so it cant make prediction for newer years.
 
 To make predictions on newer data; metrics like year over year growth or monthly growth in Rented Bikes (forecasted and otherwise) could be incorporated and the final predictions from random forest model could be adjusted based on those metrics.
 
-Model could be further improved by selecting other relevant variables based on domain knowledge such as Traffic data, Geographic data etc. 
+Model could be further improved by increasing number of datapoints, selecting other relevant variables based on domain knowledge such as Traffic data, Geographic data etc. 
 
 
 
