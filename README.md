@@ -125,20 +125,22 @@ A Random Forest model with parameters n_estimators=100,bootstrap=True is trained
 
 Results
 
-![Screenshot 2024-07-20 174054](https://github.com/user-attachments/assets/1cfe6ce7-8a85-496f-81f1-1632c3cd829d)
+![Screenshot 2024-07-20 181534](https://github.com/user-attachments/assets/a59a7724-647a-470d-8b81-394af1216502)
 
 Performance on trainset
 
 ![Screenshot 2024-07-20 175738](https://github.com/user-attachments/assets/97d0c7d2-9e3c-4e7f-b836-fdbf3fb14578)
 
-Random forests are usually less prone to overfitting and donot require extensive hyperparameter tuning
+Random forests are usually less prone to overfitting and do not require extensive hyperparameter tuning
+
+Note that random forest model could give slightly different results everytime its trained because of bootstrapping(training on random subsets of training data) but its only a slight difference.
 
 ## Production
 This model is only trained on 2017 and 2018 year data(year variable has only these two values in training data) so it cant make prediction for newer years
 
-To make predictions on newer data metrics like year over year growth or monthly growth in business (forecasted and otherwise) could be incorporated and the final predictions from random forest model could be adjusted based on those metrics
+To make predictions on newer data; metrics like year over year growth or monthly growth in Rented Bikes (forecasted and otherwise) could be incorporated and the final predictions from random forest model could be adjusted based on those metrics
 
-Model could be further improved by selecting other relevant variables based on domain knowledge such as traffic data, Geographic data etc. 
+Model could be further improved by selecting other relevant variables based on domain knowledge such as Traffic data, Geographic data etc. 
 
 
 
