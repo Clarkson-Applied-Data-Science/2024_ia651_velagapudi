@@ -101,6 +101,16 @@ Date and Month are not included to avoid turning it into a time series model as 
 ## Feature engineering -
 Categorical variables Functioning day and Holiday are numerically encoded as they are binary categorical variables\
 Season and Weekday are label encoded numerically for the following reasons\
+Weekday- {'Monday': 1, 'Tuesday': 2, 'Wednesday': 3, 'Thursday': 4, 'Friday': 5, 'Saturday': 6, 'Sunday': 7}\
+Holiday- {'Holiday': 0, 'No Holiday': 1}\
+Functioning day- {'Yes': 1, 'No': 0}\
+Seasons- {
+    'Autumn': 0,
+    'Spring': 1,
+    'Summer': 2,
+    'Winter': 3
+}\
+Hour is already label encoded\
 1.One Hot encoding is not suitable for Random Forest Model as it increases tree complexity which could be more prone to making bad predictions\
 2.Tree models handle numerical label encoding as they can make very precise splits
 
@@ -111,6 +121,7 @@ Data After Feature Engineering
 A Random Forest model with parameters n_estimators=100,bootstrap=True is trained
 
 Results
+
 ![Screenshot 2024-07-20 174054](https://github.com/user-attachments/assets/1cfe6ce7-8a85-496f-81f1-1632c3cd829d)
 
 
