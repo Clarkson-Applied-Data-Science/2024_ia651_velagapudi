@@ -27,8 +27,8 @@ The dataset includes the following features:
   - **Date**: year-month-day
   - **Hour**: Hour of he day
 - **Holiday**: Information on whether the date is a holiday.(Holiday/No holiday)
-- **Functionining Day** - Information on whether the date is a Fucntioning Day.(Yes/No)
-- **Number of Instances**: [Specify the exact number of rows/instances in your dataset]
+- **Functioning Day** - Information on whether the date is a Fucntioning Day.(Yes/No)
+- **Number of Instances**: 8760
 
 The dataset has no missing values
 
@@ -37,6 +37,8 @@ The dataset has no missing values
 Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes. 
 
 This project aims to predict Rented Bike Count variable based on several input features
+
+Random forest regression model will be built as other regression techniques such as Linear regression will fail to capture nonlinear relationships and the amount data might not be enough for training neural entworks. Random forests are popular and do well in multivariate regression and are less likely to overfit as the final prediction is average prediction of multiple trees
 
 ## Exploratory Data Analysis EDA
 Sample Data
@@ -90,7 +92,7 @@ All categorical columns(Functioning day,Holiday,Season) are also selected as the
 
 Hour is signifcantly impacting Rented Bike Count (see Hour vs Rented Bike Count plot) and It has positive correlation of 0.42 with Rented Bike Count(see Correlation matrix) indicating increasing trend on average as hour of the day increases and Daily routines often vary by hour, making it an important factor to consider.
 
-Year is included as there is significant difference in Mean Rented Bike Count by Year. Note that when a new year is introduced the model cant make good predictions; solution for that is suggested at the end.
+Year is included as there is significant difference in Mean Rented Bike Count by Year. Note that the model will be trained only on 2017 and 2018 data when a new year is introduced the model cant make reliable predictions; a solution for that is suggested at the end.
 
 Weekday is included as there is substantial difference in Mean Rented Bike Count by Weekday and it could be a required factor as weekly routines are common.
 
