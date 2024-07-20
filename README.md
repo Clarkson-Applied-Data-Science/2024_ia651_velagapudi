@@ -70,10 +70,13 @@ Average Rented Bike Count by Holiday
 
 ![Screenshot 2024-07-20 161530](https://github.com/user-attachments/assets/b7624748-659d-4cf0-81de-c1a1dca9204e)
 
-
+Mean rented bike count by year
 ![Screenshot 2024-07-20 161641](https://github.com/user-attachments/assets/f7f81687-a741-4b6f-ae27-3133a450fa7f)
+
+Mean(average of middle 50% values to avoid outliers) rented bike count by year
 ![Screenshot 2024-07-20 161652](https://github.com/user-attachments/assets/308ab0dc-457b-4b9e-b9b2-60f67a0ec010)
 
+Mean rented bike count by weekday
 ![Screenshot 2024-07-20 161702](https://github.com/user-attachments/assets/93fd6db3-3d6e-4e18-b4e4-d295e2d0c6ef)
 
 Data After Encoding Categorical Variables
