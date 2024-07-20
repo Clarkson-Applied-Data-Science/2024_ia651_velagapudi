@@ -111,5 +111,6 @@ Data After Feature Engineering
 A Random Forest model with parameters n_estimators=100,bootstrap=True is trained
 
 Results
+![Screenshot 2024-07-20 174054](https://github.com/user-attachments/assets/1cfe6ce7-8a85-496f-81f1-1632c3cd829d)
 
-![Screenshot 2024-07-20 162219](https://github.com/user-attachments/assets/0b339970-45f2-4f89-aae6-827999d989b6)
+
