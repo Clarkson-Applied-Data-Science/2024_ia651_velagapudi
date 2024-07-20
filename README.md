@@ -131,5 +131,7 @@ Performance on trainset
 
 ![Screenshot 2024-07-20 175738](https://github.com/user-attachments/assets/97d0c7d2-9e3c-4e7f-b836-fdbf3fb14578)
 
+Random forests are usually less prone to overfitting and donot require extensive hyperparameter tuning
+
 
 
