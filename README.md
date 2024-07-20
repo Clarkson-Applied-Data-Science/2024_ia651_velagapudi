@@ -133,5 +133,12 @@ Performance on trainset
 
 Random forests are usually less prone to overfitting and donot require extensive hyperparameter tuning
 
+## Production
+This model is only trained on 2017 and 2018 year data(year variable has only these two values in training data) so it cant make prediction for newer years
+
+To make predictions on newer data metrics like year over year growth or monthly growth in business (forecasted and otherwise) could be incorporated and the final predictions from random forest model could be adjusted based on those metrics
+
+Model could be further improved by selecting other relevant variables based on domain knowledge such as traffic data, Geographic data etc. 
+
 
 
