@@ -42,6 +42,10 @@ This project aims to predict Rented Bike Count variable based on several input f
 Sample Data
 ![Screenshot 2024-07-20 162126](https://github.com/user-attachments/assets/0c589275-a21e-4fb8-b211-70f111af66d7)
 
+Data is split into train and test sets with test size of 0.2 and random state of 42
+
+###Only training data is used in exploratory data analysis to avoid data leakage
+
 ### Distribution of features
 Numerical Features
 ![0](https://github.com/user-attachments/assets/9322e140-ffa5-4712-b0a6-c08aabd54164)
@@ -59,8 +63,10 @@ Average Rented Bike Count by Season and Holiday
 Average Rented Bike Count by Hour
 ![Screenshot 2024-07-20 161542](https://github.com/user-attachments/assets/31c45433-c039-44e7-8c0c-1a4564c6b0b6)
 
+Average Rented Bike Count by Functioning Day
 ![Screenshot 2024-07-20 161522](https://github.com/user-attachments/assets/cc111beb-d443-49d6-90b2-6901686ca07a)
 
+Average Rented Bike Count by Holiday
 ![Screenshot 2024-07-20 161530](https://github.com/user-attachments/assets/b7624748-659d-4cf0-81de-c1a1dca9204e)
 
 
