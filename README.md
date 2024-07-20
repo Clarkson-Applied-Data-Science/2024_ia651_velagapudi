@@ -102,8 +102,8 @@ Date and Month are not included to avoid turning it into a time series model as 
 Categorical variables Functioning day and Holiday are numerically encoded as they are binary categorical variables\
 Season and Weekday are label encoded numerically for the following reasons
 
-1.One Hot encoding is not suitable for Random Forest Model as it increases tree complexity which could be more prone to making bad predictions\
-2.Tree models handle numerical label encoding as they can make very precise splits
+1.One Hot encoding is not suitable for Random Forest Model as it increases tree complexity which could be more prone to making bad predictions.\
+2.Tree models handle numerical label encoding as they can make very precise splits.
 
 Weekday- {'Monday': 1, 'Tuesday': 2, 'Wednesday': 3, 'Thursday': 4, 'Friday': 5, 'Saturday': 6, 'Sunday': 7}\
 Holiday- {'Holiday': 0, 'No Holiday': 1}\
@@ -136,9 +136,9 @@ Random forests are usually less prone to overfitting and do not require extensiv
 Note that random forest model could give slightly different results everytime its trained because of bootstrapping(training on random subsets of training data) but its only a slight difference.
 
 ## Production
-This model is only trained on 2017 and 2018 year data(year variable has only these two values in training data) so it cant make prediction for newer years
+This model is only trained on 2017 and 2018 year data(year variable has only these two values in training data) so it cant make prediction for newer years.
 
-To make predictions on newer data; metrics like year over year growth or monthly growth in Rented Bikes (forecasted and otherwise) could be incorporated and the final predictions from random forest model could be adjusted based on those metrics
+To make predictions on newer data; metrics like year over year growth or monthly growth in Rented Bikes (forecasted and otherwise) could be incorporated and the final predictions from random forest model could be adjusted based on those metrics.
 
 Model could be further improved by selecting other relevant variables based on domain knowledge such as Traffic data, Geographic data etc. 
 
