@@ -121,10 +121,15 @@ Data After Feature Engineering
 ![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
 
 ## Final Model
-A Random Forest model with parameters n_estimators=100,bootstrap=True is trained
+A Random Forest model with parameters n_estimators=100,bootstrap=True is trained on trainset and tested on testset
 
 Results
 
 ![Screenshot 2024-07-20 174054](https://github.com/user-attachments/assets/1cfe6ce7-8a85-496f-81f1-1632c3cd829d)
+
+Performance on trainset
+
+![Screenshot 2024-07-20 175738](https://github.com/user-attachments/assets/97d0c7d2-9e3c-4e7f-b836-fdbf3fb14578)
+
 
 
