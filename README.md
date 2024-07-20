@@ -43,8 +43,7 @@ Sample Data
 ![Screenshot 2024-07-20 162126](https://github.com/user-attachments/assets/0c589275-a21e-4fb8-b211-70f111af66d7)
 
 Data is split into train and test sets with test size of 0.2 and random state of 42
-
-###Only training data is used in exploratory data analysis to avoid data leakage
+Only training data is used in exploratory data analysis to avoid data leakage
 
 ### Distribution of features
 Numerical Features
