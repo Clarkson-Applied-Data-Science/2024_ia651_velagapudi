@@ -63,9 +63,11 @@ Average Rented Bike Count by Hour
 ![Screenshot 2024-07-20 161542](https://github.com/user-attachments/assets/31c45433-c039-44e7-8c0c-1a4564c6b0b6)
 
 Average Rented Bike Count by Functioning Day
+
 ![Screenshot 2024-07-20 161522](https://github.com/user-attachments/assets/cc111beb-d443-49d6-90b2-6901686ca07a)
 
 Average Rented Bike Count by Holiday
+
 ![Screenshot 2024-07-20 161530](https://github.com/user-attachments/assets/b7624748-659d-4cf0-81de-c1a1dca9204e)
 
 
