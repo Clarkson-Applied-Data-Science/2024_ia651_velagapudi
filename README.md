@@ -116,7 +116,8 @@ Seasons- {
     'Summer': 2,
     'Winter': 3
 }\
-Hour is already label encoded
+Hour is already label encoded\
+Features are not scaled because random forest model does not require featuring scaling
 
 
 Data After Feature Engineering
