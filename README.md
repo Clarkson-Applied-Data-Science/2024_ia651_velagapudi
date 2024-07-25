@@ -42,7 +42,7 @@ Random forest regression model will be built as other regression techniques such
 
 ## Exploratory Data Analysis EDA
 Sample Data
-Seoul images/0.png
+![Seoul Image](images/he.png)
 
 Data is split into train and test sets with test size of 0.4 and random state of 42\
 Only training data is used in exploratory data analysis to avoid data leakage\
@@ -50,42 +50,42 @@ Year and Weekday are extracted from datetime column
 
 ### Distribution of features
 Numerical Features
-Seoul images/1.png
+![Seoul Image](images/0.png)
 
 Categorical Features
-Seoul images/2.png
+![Seoul Image](images/1.png)
 
 ### Correlation Matrix
-Seoul images/3.png
+![Seoul Image](images/2.png)
 
 ### Exploratory Stats
 Average Rented Bike Count by Season and Holiday
-![Screenshot 2024-07-20 161508](https://github.com/user-attachments/assets/7860d35b-73fa-47e3-aba0-5c11bbb79529)
+![Seoul Image](images/3.png)
 
 Average Rented Bike Count by Hour
-![Screenshot 2024-07-20 161542](https://github.com/user-attachments/assets/31c45433-c039-44e7-8c0c-1a4564c6b0b6)
+![Seoul Image](images/h.png)
 
 Average Rented Bike Count by Functioning Day
 
-![Screenshot 2024-07-20 161522](https://github.com/user-attachments/assets/cc111beb-d443-49d6-90b2-6901686ca07a)
+![Seoul Image](images/fu.png)
 
 As the average rented bike count is 0 for non functioning days, The model will be adjusted to predict 0 everytime functioning day is 0
 
 Average Rented Bike Count by Holiday
 
-![Screenshot 2024-07-20 161530](https://github.com/user-attachments/assets/b7624748-659d-4cf0-81de-c1a1dca9204e)
+![Seoul Image](images/ho.png)
 
 Mean rented bike count by year
 
-![Screenshot 2024-07-20 161641](https://github.com/user-attachments/assets/f7f81687-a741-4b6f-ae27-3133a450fa7f)
+![Seoul Image](images/ye.png)
 
 Mean(average of middle 50% values to avoid outliers) rented bike count by year
 
-![Screenshot 2024-07-20 161652](https://github.com/user-attachments/assets/308ab0dc-457b-4b9e-b9b2-60f67a0ec010)
+![Seoul Image](images/ye2.png)
 
 Mean rented bike count by weekday
 
-![Screenshot 2024-07-20 161702](https://github.com/user-attachments/assets/93fd6db3-3d6e-4e18-b4e4-d295e2d0c6ef)
+![Seoul Image](images/we.png)
 
 ## Feature selection -
 All numerical features are selected as they are well correlated with the target variable(Rented Bike Count) as all absolute correlation values are 0.1 and greater
