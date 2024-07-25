@@ -121,18 +121,35 @@ Features are not scaled because random forest model does not require featuring s
 
 
 Data After Feature Engineering
-![Screenshot 2024-07-20 162155](https://github.com/user-attachments/assets/27c0f6b7-4c39-46e8-9687-ea9d36e65419)
+![Seoul Image](images/he2.png)
 
 ## Final Model
-A Random Forest model with parameters n_estimators=100,bootstrap=True is trained on trainset and tested on testset
+A Random Forest model with parameters n_estimators=100,bootstrap=True is trained on trainset and tested using cross validation with n=3
 
 Results
 
-![Screenshot 2024-07-20 181534](https://github.com/user-attachments/assets/a59a7724-647a-470d-8b81-394af1216502)
+![Seoul Image](images/cv1.png)
+
+Feature importance
+
+![Seoul Image](images/fe.png)
+
+Year feature has very low importance even though it was deliberately included so it is dropped and cross validation score is calculated again
+
+![Seoul Image](images/cv2.png)
+
+Year has no effect on accuracy so it is not used in final model\
+
+Final model is trained with best parameters found using gridsearch\
+param_grid = {
+    'min_samples_leaf': [1, 2, 4, 6, 8, 10],
+    'max_depth': [None, 10, 20, 30, 40, 50]
+}
+![Seoul Image](images/tr.png)
 
 Performance on trainset
 
-![Screenshot 2024-07-20 175738](https://github.com/user-attachments/assets/97d0c7d2-9e3c-4e7f-b836-fdbf3fb14578)
+![Seoul Image](images/te.png)
 
 Prediction examples 
 
