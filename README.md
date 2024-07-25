@@ -132,13 +132,13 @@ Results
 
 Feature importance
 
-![Seoul Image](images/fe.png)
+![Seoul Image](images/f.png)
 
 Year feature has very low importance even though it was deliberately included so it is dropped and cross validation score is calculated again
 
 ![Seoul Image](images/cv2.png)
 
-Year has no effect on accuracy so it is not used in final model\
+Year has no effect on accuracy so it is not used in final model
 
 Final model is trained with best parameters found using gridsearch\
 param_grid = {
