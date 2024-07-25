@@ -42,21 +42,21 @@ Random forest regression model will be built as other regression techniques such
 
 ## Exploratory Data Analysis EDA
 Sample Data
-![Screenshot 2024-07-20 162126](https://github.com/user-attachments/assets/0c589275-a21e-4fb8-b211-70f111af66d7)
+Seoul images/0.png
 
-Data is split into train and test sets with test size of 0.2 and random state of 42\
+Data is split into train and test sets with test size of 0.4 and random state of 42\
 Only training data is used in exploratory data analysis to avoid data leakage\
 Year and Weekday are extracted from datetime column
 
 ### Distribution of features
 Numerical Features
-![0](https://github.com/user-attachments/assets/9322e140-ffa5-4712-b0a6-c08aabd54164)
+Seoul images/1.png
 
 Categorical Features
-![1](https://github.com/user-attachments/assets/6f621111-8805-497e-947d-8605d06a3121)
+Seoul images/2.png
 
 ### Correlation Matrix
-![Screenshot 2024-07-20 161446](https://github.com/user-attachments/assets/9fbda2b0-d3c9-40c0-b762-00e579b47e42)
+Seoul images/3.png
 
 ### Exploratory Stats
 Average Rented Bike Count by Season and Holiday
