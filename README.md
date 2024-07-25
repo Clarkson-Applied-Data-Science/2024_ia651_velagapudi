@@ -117,7 +117,7 @@ Seasons- {
     'Winter': 3
 }\
 Hour is already label encoded\
-Features are not scaled because random forest model does not require featuring scaling
+Features are not scaled because random forest decision tree model does not require featuring scaling
 
 
 Data After Feature Engineering
@@ -132,7 +132,7 @@ Results
 
 Feature importance
 
-![Seoul Image](images/f.png)
+![Seoul Image](images/fi.png)
 
 Year feature has very low importance even though it was deliberately included so it is dropped and cross validation score is calculated again
 
@@ -155,28 +155,30 @@ Prediction examples
 
 Test example 1:\
 Input features:\
-{'Hour': 8.0, 'Temperature(°C)': 27.2, 'Humidity(%)': 69.0, 'Wind speed (m/s)': 1.8, 'Visibility (10m)': 1999.0, 'Dew point temperature(°C)': 21.0, 'Solar Radiation (MJ/m2)': 0.7, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 2.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2018.0, 'WeekDay': 5.0}\
-Actual: 1728\
-Predicted: 779.1\
+{'Hour': 8.0, 'Temperature(°C)': 27.2, 'Humidity(%)': 69.0, 'Wind speed (m/s)': 1.8, 'Visibility (10m)': 1999.0, 'Dew point temperature(°C)': 21.0, 'Solar Radiation (MJ/m2)': 0.7, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 2.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'WeekDay': 5.0}
+Actual: 1728
+Predicted: 2112.86
 
 Test example 2:\
 Input features:\
-{'Hour': 12.0, 'Temperature(°C)': 32.6, 'Humidity(%)': 51.0, 'Wind speed (m/s)': 2.1, 'Visibility (10m)': 800.0, 'Dew point temperature(°C)': 21.1, 'Solar Radiation (MJ/m2)': 3.21, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 2.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2018.0, 'WeekDay': 5.0}\
-Actual: 822\
-Predicted: 1057.86
+{'Hour': 12.0, 'Temperature(°C)': 32.6, 'Humidity(%)': 51.0, 'Wind speed (m/s)': 2.1, 'Visibility (10m)': 800.0, 'Dew point temperature(°C)': 21.1, 'Solar Radiation (MJ/m2)': 3.21, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 2.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'WeekDay': 5.0}
+Actual: 822
+Predicted: 591.27
+
 
 Synthesized example 1:\
 Input features:\
-{'Hour': 10.0, 'Temperature(°C)': 25.0, 'Humidity(%)': 40.0, 'Wind speed (m/s)': 2.0, 'Visibility (10m)': 2000.0, 'Dew point temperature(°C)': 15.0, 'Solar Radiation (MJ/m2)': 0.5, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 0.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2017.0, 'WeekDay': 1.0}\
-Predicted: 857.84
+{'Hour': 10.0, 'Temperature(°C)': 25.0, 'Humidity(%)': 40.0, 'Wind speed (m/s)': 2.0, 'Visibility (10m)': 2000.0, 'Dew point temperature(°C)': 15.0, 'Solar Radiation (MJ/m2)': 0.5, 'Rainfall(mm)': 0.0, 'Snowfall (cm)': 0.0, 'Seasons': 0.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'WeekDay': 1.0}
+Predicted: 838.01
 
 Synthesized example 2:\
 Input features:\
-{'Hour': 14.0, 'Temperature(°C)': 30.0, 'Humidity(%)': 50.0, 'Wind speed (m/s)': 3.5, 'Visibility (10m)': 1500.0, 'Dew point temperature(°C)': 20.0, 'Solar Radiation (MJ/m2)': 0.1, 'Rainfall(mm)': 0.1, 'Snowfall (cm)': 0.1, 'Seasons': 3.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'Year': 2017.0, 'WeekDay': 7.0}\
-Predicted: 391.5
+{'Hour': 14.0, 'Temperature(°C)': 30.0, 'Humidity(%)': 50.0, 'Wind speed (m/s)': 3.5, 'Visibility (10m)': 1500.0, 'Dew point temperature(°C)': 20.0, 'Solar Radiation (MJ/m2)': 0.1, 'Rainfall(mm)': 0.1, 'Snowfall (cm)': 0.1, 'Seasons': 3.0, 'Holiday': 1.0, 'Functioning Day': 1.0, 'WeekDay': 7.0}
+Predicted: 377.41
 
 
-Random forests are usually less prone to overfitting and do not require extensive hyperparameter tuning
+
+Random forests are usually less prone to overfitting because predictions are averaged across multiple trees
 
 Note that random forest model could give slightly different results every time it's trained because of bootstrapping(training on random subsets of training data) but its only a slight difference.
 
