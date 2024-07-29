@@ -113,9 +113,9 @@ Year is included as there is significant difference in Mean Rented Bike Count by
 
 Weekday is included as there is substantial difference in Mean Rented Bike Count by Weekday and it could be a required factor as weekly routines are common.
 
-We will drop any of these variables later if feature importance is too low
-
 Date and Month are not included to avoid turning it into a time series model as Random forest can't handle time series data well enough and to focus to building a simple more generalized model based on non datetime input features, Hour and weekday are included to capture very common obvious routines. 
+
+We will drop any of these variables later if feature importance is found to be too low
 
 ## Feature engineering
 Categorical variables Functioning day and Holiday are numerically encoded as they are binary categorical variables\
