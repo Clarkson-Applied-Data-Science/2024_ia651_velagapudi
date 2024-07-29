@@ -7,14 +7,15 @@
 - [Overview](#Overview)
 - [Dataset Details](#Dataset-Details)
 - [Objectives](#Objectives)
-- [Exploratory Data Analysis EDA](#Exploratory Data Analysis EDA)
-  - [Distribution of features](# Distribution of features)
-- [Modeling](#modeling)
-  
-  - [Model Evaluation](#model-evaluation)
-- [Results](#results)
-- [Conclusion](#conclusion)
-- [References](#references)
+- [Exploratory Data Analysis EDA](#Exploratory-Data-Analysis-EDA)
+  - [Distribution of features](#Distribution-of-features)
+  - [Correlation Matrix](#Correlation-Matrix)
+  - [Exploratory Stats](#Exploratory-Stats)
+- [Feature selection](#Feature-selection)
+- [Feature engineering](#Feature-engineering)
+- [Final Model](#Final-Model)
+- [Limitations](#Limitations)
+- [Production](#Production)
 
 ## Overview
 
@@ -111,6 +112,8 @@ Hour is signifcantly impacting Rented Bike Count (see Hour vs Rented Bike Count 
 Year is included as there is significant difference in Mean Rented Bike Count by Year. Note that the model will be trained only on 2017 and 2018 data when a new year is introduced the model cant make reliable predictions; a solution for that is suggested at the end.
 
 Weekday is included as there is substantial difference in Mean Rented Bike Count by Weekday and it could be a required factor as weekly routines are common.
+
+We will drop any of these variables later if feature importance is too low
 
 Date and Month are not included to avoid turning it into a time series model as Random forest can't handle time series data well enough and to focus to building a simple more generalized model based on non datetime input features, Hour and weekday are included to capture very common obvious routines. 
 
