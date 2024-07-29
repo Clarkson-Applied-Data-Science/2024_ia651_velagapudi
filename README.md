@@ -2,6 +2,20 @@
 
 # Seoul Bike Sharing System Dataset
 
+## Table of Contents
+
+- [Overview](#Overview)
+- [Dataset Details](#Dataset Details)
+- [Objectives](#Objectives)
+- [Exploratory Data Analysis EDA](#Exploratory Data Analysis EDA)
+  - [Distribution of features](# Distribution of features)
+- [Modeling](#modeling)
+  
+  - [Model Evaluation](#model-evaluation)
+- [Results](#results)
+- [Conclusion](#conclusion)
+- [References](#references)
+
 ## Overview
 
 The dataset contains count of public bicycles rented per hour in the Seoul Bike Sharing System, with corresponding weather data and holiday information
