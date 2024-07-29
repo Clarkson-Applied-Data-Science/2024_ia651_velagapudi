@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Overview](#Overview)
-- [Dataset Details](#Dataset Details)
+- [Dataset Details](#DatasetDetails)
 - [Objectives](#Objectives)
 - [Exploratory Data Analysis EDA](#Exploratory Data Analysis EDA)
   - [Distribution of features](# Distribution of features)
