@@ -157,12 +157,16 @@ Year feature has very low importance even though it was deliberately included so
 
 Year has no effect on accuracy so it is not used in final model
 
-Final model is trained with best parameters found using gridsearch\
+Final model is trained with best parameters found using gridsearch with cross validation on trainset\
 param_grid = {
     'min_samples_leaf': [1, 2, 4, 6, 8, 10],
     'max_depth': [None, 10, 20, 30, 40, 50]
 }
-![Seoul Image](images/tr.png)
+![Seoul Image](images/tr(1).png)
+
+Performance on testset
+
+![Seoul Image](images/tr(2).png)
 
 Performance on trainset
 
@@ -202,7 +206,6 @@ Note that random forest model could give slightly different results every time i
 ## Limitations
 This Model is Statistical and cannot make exact predictions.\
 Random Forest models are not easily interpretable compared to single decision trees.\
-This model can give far off predictions as seen in the test example 1 especially with outliers.\
 This model is only trained on 2017 and 2018 year data; could give bad predictions for newer years.\
 The model cannot forecast unanticipated events for which it is not trained on.
 
