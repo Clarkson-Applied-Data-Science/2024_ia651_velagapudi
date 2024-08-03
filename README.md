@@ -13,6 +13,7 @@
   - [Exploratory Stats](#Exploratory-Stats)
 - [Feature selection](#Feature-selection)
 - [Feature engineering](#Feature-engineering)
+- [Model](#Model)
 - [Final Model](#Final-Model)
 - [Limitations](#Limitations)
 - [Production](#Production)
@@ -140,7 +141,7 @@ Features are not scaled because random forest decision tree model does not requi
 Data After Feature Engineering
 ![Seoul Image](images/he2.png)
 
-## Final Model
+## Model
 A Random Forest model with parameters n_estimators=100,bootstrap=True is trained on trainset and tested using cross validation with n=3
 
 Results
@@ -156,6 +157,8 @@ Year feature has very low importance even though it was deliberately included so
 ![Seoul Image](images/cv2.png)
 
 Year has no effect on accuracy so it is not used in final model
+
+## Final Model
 
 Best parameters found are using gridsearch with cross validation on trainset\
 param_grid = {
