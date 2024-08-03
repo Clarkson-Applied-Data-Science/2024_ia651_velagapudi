@@ -13,7 +13,7 @@
   - [Exploratory Stats](#Exploratory-Stats)
 - [Feature selection](#Feature-selection)
 - [Feature engineering](#Feature-engineering)
-- [Model](#Model)
+- [Modelling](#Modelling)
 - [Final Model](#Final-Model)
 - [Limitations](#Limitations)
 - [Production](#Production)
@@ -141,7 +141,7 @@ Features are not scaled because random forest decision tree model does not requi
 Data After Feature Engineering
 ![Seoul Image](images/he2.png)
 
-## Model
+## Modelling
 A Random Forest model with parameters n_estimators=100,bootstrap=True is trained on trainset and tested using cross validation with n=3
 
 Results
