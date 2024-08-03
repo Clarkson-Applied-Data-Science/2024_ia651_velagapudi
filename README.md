@@ -157,18 +157,19 @@ Year feature has very low importance even though it was deliberately included so
 
 Year has no effect on accuracy so it is not used in final model
 
-Final model is trained with best parameters found using gridsearch with cross validation on trainset\
+Best parameters found are using gridsearch with cross validation on trainset\
 param_grid = {
     'min_samples_leaf': [1, 2, 4, 6, 8, 10],
     'max_depth': [None, 10, 20, 30, 40, 50]
 }
+
 ![Seoul Image](images/tr1.png)
 
-Performance on testset with model trained on trainset
+Final model is trained on Trainset. The following is its Performance on Testset
 
 ![Seoul Image](images/tr2.png)
 
-Performance on trainset
+Performance on Trainset
 
 ![Seoul Image](images/trainset.png)
 
